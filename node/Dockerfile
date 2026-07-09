@@ -4,7 +4,7 @@ FROM node:24-alpine AS build
 WORKDIR /usr/src/app
 
 COPY package*.json ./
-RUN npm clean-install
+RUN npm ci --omit=dev
 
 COPY . .
 
