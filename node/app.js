@@ -9,5 +9,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, HOST, () => {
-  console.log(`Server running on http://${HOST}:${PORT}`);
+  console.log(`Server running on http://${HOST}:${PORT} and pid is ${process.pid}`);
 });
